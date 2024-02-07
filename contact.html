@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">  <style>
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ccc;
+}
+
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+body {
+  border-radius: 5px;
+  background-color: #0462aa;
+  padding: 10px;
+}
+.map-container{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container iframe{
+left:0;
+top:0;
+height:100%;
+width:80%;
+position:absolute;
+}
+.col {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+      <div class="container">
+            <div class="row"></div>
+            <div style="text-align:center">
+              <h3>Feel free to contact us.</h3>
+            </div>
+              <div class="col">
+                <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 470px ; width: 500px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.552830939098!2d75.70436187510894!3d31.26080005992141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5fca6a8887f9%3A0x48044ce5b6683280!2sLPU%20FRONT%20ENTRANCE%20GATE!5e0!3m2!1sen!2sin!4v1699201295367!5m2!1sen!2sin" frameborder="0"
+                      style="border:0" allowfullscreen></iframe>
+                  </div>
+              </div>
+              <div class="col">
+                <form action="#not available">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Mayank">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Joshi">
+                  <label for="age">Age</label>
+                  <select id="age" name="age" style="color: gray">
+                    <option value="minor" style="color: grey;">Under 18</option>
+                    <option value="working" style="color: grey;">Between 18 and 60</option>
+                    <option value="retired" style="color: grey;">Above 60</option>
+                  </select>
+                  <label for="subject">Message</label>
+                  <textarea id="subject" name="subject" placeholder="Type your Message here." style="height:80px"></textarea>
+                  <button type="button" class="btn btn-info">Send Message</button>
+                </form>
+              </div>
+            </div>
+</body>
+</html>
